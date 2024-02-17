@@ -11,6 +11,11 @@ import SwiftUI
 struct VisionPro_Inspiration4App: App {
     @State var viewModel = ViewModel()
     
+    init() {
+        OrbitComponent.registerComponent()
+        OrbitSystem.registerSystem()
+    }
+    
     var body: some Scene {
         WindowGroup {
             AreasView()

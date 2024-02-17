@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5557212B80686700505FE3 /* Entity+Sunglight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5557202B80686700505FE3 /* Entity+Sunglight.swift */; };
+		2D5557252B806DCE00505FE3 /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 2D5557242B806DCE00505FE3 /* Sunlight.skybox */; };
+		2D5557292B806EB100505FE3 /* OrbitSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5557282B806EB100505FE3 /* OrbitSystem.swift */; };
+		2D55572B2B807A9700505FE3 /* CapsuleControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55572A2B807A9700505FE3 /* CapsuleControlView.swift */; };
 		2D79AEEE2B7F699500A63BFD /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2D79AEED2B7F699500A63BFD /* RealityKitContent */; };
 		2D79AEF02B7F699500A63BFD /* VisionPro_Inspiration4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D79AEEF2B7F699500A63BFD /* VisionPro_Inspiration4App.swift */; };
 		2D79AEF62B7F699500A63BFD /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 2D79AEF52B7F699500A63BFD /* ImageBasedLighting.skybox */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D5557202B80686700505FE3 /* Entity+Sunglight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Sunglight.swift"; sourceTree = "<group>"; };
+		2D5557242B806DCE00505FE3 /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
+		2D5557282B806EB100505FE3 /* OrbitSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitSystem.swift; sourceTree = "<group>"; };
+		2D55572A2B807A9700505FE3 /* CapsuleControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleControlView.swift; sourceTree = "<group>"; };
 		2D79AEE82B7F699500A63BFD /* VisionPro_Inspiration4App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionPro_Inspiration4App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D79AEEC2B7F699500A63BFD /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2D79AEEF2B7F699500A63BFD /* VisionPro_Inspiration4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionPro_Inspiration4App.swift; sourceTree = "<group>"; };
@@ -56,10 +64,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D55571F2B80684E00505FE3 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				2D5557202B80686700505FE3 /* Entity+Sunglight.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2D5557262B806E0400505FE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D79AEF52B7F699500A63BFD /* ImageBasedLighting.skybox */,
+				2D79AF0E2B7F75FF00A63BFD /* Assets.xcassets */,
+				2D5557242B806DCE00505FE3 /* Sunlight.skybox */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D5557272B806E9600505FE3 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				2D5557282B806EB100505FE3 /* OrbitSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
 		2D79AEDF2B7F699500A63BFD = {
 			isa = PBXGroup;
 			children = (
 				2D79AEEA2B7F699500A63BFD /* VisionPro_Inspiration4App */,
+				2D5557262B806E0400505FE3 /* Resources */,
 				2D79AEEB2B7F699500A63BFD /* Packages */,
 				2D79AEE92B7F699500A63BFD /* Products */,
 			);
@@ -76,13 +111,13 @@
 		2D79AEEA2B7F699500A63BFD /* VisionPro_Inspiration4App */ = {
 			isa = PBXGroup;
 			children = (
+				2D5557272B806E9600505FE3 /* Systems */,
+				2D55571F2B80684E00505FE3 /* Extentions */,
 				2D79AF052B7F6D1400A63BFD /* Models */,
 				2D79AF042B7F6A7F00A63BFD /* Areas */,
 				2D79AF152B7F977C00A63BFD /* RealityViews */,
 				2D79AEEF2B7F699500A63BFD /* VisionPro_Inspiration4App.swift */,
-				2D79AEF52B7F699500A63BFD /* ImageBasedLighting.skybox */,
 				2D79AEFC2B7F699500A63BFD /* Info.plist */,
-				2D79AF0E2B7F75FF00A63BFD /* Assets.xcassets */,
 				2D79AEF92B7F699500A63BFD /* Preview Content */,
 			);
 			path = VisionPro_Inspiration4App;
@@ -112,6 +147,7 @@
 				2D79AF0C2B7F703600A63BFD /* NavigatinonToAreas.swift */,
 				2D79AF132B7F8D1000A63BFD /* EquipmentArea.swift */,
 				2D79AF1A2B7FA59400A63BFD /* EquipmentCardView.swift */,
+				2D55572A2B807A9700505FE3 /* CapsuleControlView.swift */,
 			);
 			path = Areas;
 			sourceTree = "<group>";
@@ -197,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D79AEFB2B7F699500A63BFD /* Preview Assets.xcassets in Resources */,
+				2D5557252B806DCE00505FE3 /* Sunlight.skybox in Resources */,
 				2D79AF0F2B7F75FF00A63BFD /* Assets.xcassets in Resources */,
 				2D79AEF62B7F699500A63BFD /* ImageBasedLighting.skybox in Resources */,
 			);
@@ -211,12 +248,15 @@
 			files = (
 				2D79AF172B7F979600A63BFD /* CapsuleRealityAreView.swift in Sources */,
 				2D79AF0D2B7F703600A63BFD /* NavigatinonToAreas.swift in Sources */,
+				2D5557212B80686700505FE3 /* Entity+Sunglight.swift in Sources */,
 				2D79AF0B2B7F6F4400A63BFD /* ViewModel.swift in Sources */,
 				2D79AEF02B7F699500A63BFD /* VisionPro_Inspiration4App.swift in Sources */,
 				2D79AF122B7F787600A63BFD /* CrewAreaView.swift in Sources */,
 				2D79AF1B2B7FA59400A63BFD /* EquipmentCardView.swift in Sources */,
 				2D79AF072B7F6D3900A63BFD /* Area.swift in Sources */,
 				2D79AF092B7F6E2C00A63BFD /* Crew.swift in Sources */,
+				2D5557292B806EB100505FE3 /* OrbitSystem.swift in Sources */,
+				2D55572B2B807A9700505FE3 /* CapsuleControlView.swift in Sources */,
 				2D79AF032B7F6A6600A63BFD /* AreasView.swift in Sources */,
 				2D79AF142B7F8D1000A63BFD /* EquipmentArea.swift in Sources */,
 				2D79AF192B7F97AF00A63BFD /* FullRocketRealityAreaView.swift in Sources */,
